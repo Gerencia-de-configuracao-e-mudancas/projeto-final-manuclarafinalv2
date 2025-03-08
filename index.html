@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>AJR - Sucessos</header>
+    <header><h1><span class="ajr">AJR</span> - Sucessos</h1></header>
     
     <div class="container">
         <section class="bio">
-            <h2>Sobre AJR</h2>
-            <p>AJR é uma banda indie pop americana formada pelos irmãos Adam , Jack e Ryan Met (anteriormente Metzger). Eles escrevem, produzem e mixam seu próprio material na sala de estar de seu apartamento em Chelsea, Manhattan.</p>
+            <h2>Sobre <span class="ajr">AJR</span></h2>
+            <p><span class="ajr">AJR</span> é uma banda indie pop americana formada pelos irmãos Adam , Jack e Ryan Met (anteriormente Metzger). Eles escrevem, produzem e mixam seu próprio material na sala de estar de seu apartamento em Chelsea, Manhattan.</p>
             <a href="https://ajrbrothers.com" target="_blank">
                 <button>Site Oficial da Banda</button>
             </a>
+        </section>
+
+        <section class="popular-songs">
+            <h2>Músicas Populares do <span class="ajr">AJR</span></h2>
+            <div class="song-list">
+                <div class="song-card">
+                    <img src="caminho/para/capa-album.jpg" alt="Capa do álbum">
+                    <h3>World's Smallest Violin</h3>
+                    <button onclick="playSound('>link musica.mp3<')">▶ Ouvir trecho</button>
+                </div>
+                <!-- Adicionar mais trechos aqui (BANG!, Burn the huse down, etc) -->
+            </div>
         </section>
 
     
@@ -27,9 +39,12 @@
             <button onclick="playSound('collect-points-190037.mp3')">Efeito Sonoro 4</button>
             <button onclick="playSound('collect-points-190037.mp3')">Efeito Sonoro 5</button>
         </div>
+    </div>
             
     <footer>
-        &copy; 2025 AJR - Todos os direitos reservados.
+        <h1>
+        &copy; 2025 <span class="ajr">AJR</span> - Todos os direitos reservados.
+        </h1>
     </footer>
 
     <script src="script.js"></script>
