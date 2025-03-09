@@ -125,7 +125,7 @@ section {
   max-width: 15rem;
   width: 30vw;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 0.5rem;
   aspect-ratio: 1;
 }
@@ -170,4 +170,13 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+li:has(ol) {
+  margin-top: 0.5rem;
+}
+
+li ol {
+  margin-left: 2rem;
+  list-style-type: decimal-leading-zero;
 }
