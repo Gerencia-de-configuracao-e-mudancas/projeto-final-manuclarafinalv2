@@ -172,6 +172,10 @@ section {
   gap: 1rem;
 }
 
+ol {
+  margin-left: 1.5rem;
+}
+
 li:has(ol) {
   margin-top: 0.5rem;
 }
@@ -179,4 +183,41 @@ li:has(ol) {
 li ol {
   margin-left: 2rem;
   list-style-type: decimal-leading-zero;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-songs {
+    grid-row: 1;
+    grid-column: 1;
+    /* height: 15rem; */
+    overflow-x: auto;
+  }
+
+  .popular-songs > h2 {
+    position: sticky;
+    left: 0;
+  }
+
+  .song-list {
+    flex-direction: row;
+    overflow-x: auto;
+    width: fit-content;
+  }
+
+  .song-card {
+    width: 80vw;
+    flex-direction: column;
+  }
+
+  .song-info {
+    height: 100%;
+  }
+
+  .songCover {
+    width: 100%;
+  }
 }
