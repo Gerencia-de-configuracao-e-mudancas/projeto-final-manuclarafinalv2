@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header onclick="playSound('bangbangbang.mp3')"><h1><span class="ajr">AJR</span> - Sucessos</h1></header>
+    <header onclick="playSound('./audio/bangbangbang.mp3')"><h1><span class="ajr">AJR</span> - Sucessos</h1></header>
     
     <div class="container">
         <section class="bio">
             <h2>Sobre <span class="ajr">AJR</span></h2>
-            <p><span class="ajr">AJR</span> é uma banda indie pop americana formada pelos irmãos Adam , Jack e Ryan Met (anteriormente Metzger). Eles escrevem, produzem e mixam seu próprio material na sala de estar de seu apartamento em Chelsea, Manhattan.</p>
+            <p><span class="ajr">AJR</span> é uma banda indie pop americana formada pelos irmãos Adam, Jack e Ryan Met (anteriormente Metzger). Eles escrevem, produzem e mixam seu próprio material na sala de estar de seu apartamento em Chelsea, Manhattan.</p>
+            <p>Seu single de maior sucesso até 2017, "I'm Ready", recebeu críticas positivas, possuindo, à data de janeiro de 2018, quase 55 milhões de reproduções no Spotify e 23 milhões de views no Youtube. Até setembro de 2022, seus maiores sucessos são "Weak" com 610 milhões de reproduções no Spotify e 77 milhões de visualizações no Youtube e <span class="bang">"Bang!"</span> com 301 milhões de reproduções no Spotify e 61 milhões de visualizações no Youtube.</p>
+            <p>Seu primeiro disco, Living Room, foi considerado um sucesso, figurando entre as 20 melhores posições da parada musical norte-americana Billboard.</p>
             <a href="https://ajrbrothers.com" target="_blank">
-                <button onclick="playSound('herewegoo.mp3')">Site Oficial da Banda</button>
+                <button onclick="playSound('./audio/herewegoo.mp3')">Site Oficial da Banda</button>
             </a>
         </section>
 
@@ -22,34 +24,52 @@
             <h2>Músicas Populares do <span class="ajr">AJR</span></h2>
             <div class="song-list">
                 <div class="song-card">
-                    <img src="capa-album.jpg" alt="Capa do álbum">
-                    <h3>World's Smallest Violin</h3>
-                    <button onclick="playSound('>link musica.mp3<')">▶ Ouvir trecho</button>
+                    <img class="songCover" src="./images/Worlds_Smallest_Violin.jpeg" alt="Capa do álbum">
+                    <div class="song-info">
+                      <h3>World's Smallest Violin</h3>
+                      <p>A música 'World's Smallest Violin' da banda <span class="ajr">AJR</span> explora a relativização do sofrimento pessoal frente às grandes adversidades enfrentadas por outras pessoas.</p>
+                      <button onclick="playSound('./music/worldsmallestviolin.mp4', 0.5)">▶ Ouvir trecho</button>
+                    </div>
                 </div>
-                <!-- Adicionar mais trechos aqui (BANG!, Burn the huse down, etc) -->
+                <div class="song-card">
+                  <img class="songCover" src="./images/weak.jpg" alt="Capa do álbum">
+                  <div class="song-info">
+                    <h3>Weak</h3>
+                    <p>A música 'Weak' da banda <span class="ajr">AJR</span> explora a temática da vulnerabilidade humana diante das tentações e como, muitas vezes, cedemos a elas apesar de reconhecermos seus potenciais malefícios.</p>
+                    <button onclick="playSound('./music/weak.m4a', 0.5)">▶ Ouvir trecho</button>
+                  </div>
+              </div>
+              <div class="song-card">
+                <img class="songCover" src="./images/bang.jpg" alt="Capa do álbum">
+                <div class="song-info">
+                  <h3 class="bang">Bang!</h3>
+                  <p>A música <span class="bang">'Bang!'</span> da banda <span class="ajr">AJR</span> é uma representação vibrante e irônica das transições da vida, especialmente a passagem da juventude para a fase adulta.</p>
+                  <button onclick="playSound('./music/bang.m4a', 0.5)">▶ Ouvir trecho</button>
+                </div>
+            </div>
             </div>
         </section>
     </div>
             
     <section class="social-media">
-        <h2 onclick="playSound('AJR OOOHH wAAAA YAYA.m4a', 0.5)">Siga <span class="ajr">AJR</span> nas Redes Sociais!</h2>
+        <h2 onclick="playSound('./audio/AJROOOHHwAAAAYAYA.m4a', 0.3)">Siga <span class="ajr">AJR</span> nas Redes Sociais!</h2>
         <div class="social-links">
-            <a href="https://instagram.com/ajrbrothers" target="_blank">
-                <img src="icons/instagram.png" alt="Instagram">
-                Instagram
+            <a class="social" href="https://instagram.com/ajrbrothers" target="_blank">
+              Instagram
+              <img class="icon" src="icons/instagram.png" alt="Instagram">
             </a>
-            <a href="https://x.com/ajrbrothers" target="_blank">
-                <img src="icons/x.png" alt="X">
-                X
+            <a class="social" href="https://x.com/ajrbrothers" target="_blank">
+              X
+              <img class="icon" src="icons/twitter.png" alt="X">
             </a>
-            <a href="https://youtube.com/ajr" target="_blank">
-                <img src="icons/youtube.png" alt="YouTube">
-                YouTube
+            <a class="social" href="https://youtube.com/ajr" target="_blank">
+              YouTube
+              <img class="icon" src="icons/youtube.png" alt="YouTube">
             </a>
         </div>
     </section>
 
-    <footer onclick="playSound('Jack-GO!.mp3')">
+    <footer onclick="playSound('./audio/Jack-GO!.mp3', 0.5)">
         <h1>
         &copy; 2025 <span class="ajr">AJR</span> - Todos os direitos reservados.
         </h1>
