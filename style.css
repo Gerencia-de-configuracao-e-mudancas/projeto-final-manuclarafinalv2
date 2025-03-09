@@ -11,31 +11,58 @@
 
 @font-face {
   font-family: ajrSans;
-  src: url('./NimbusSanL-Bol.otf');
+  src: url('./NimbusSanL-Regu.ttf');
+}
+
+@font-face {
+  font-family: ajrNeo;
+  src: url('./exljbris-MuseoSlab-500.otf');
 }
 
 html, body {
-  background: #8d8d8d;
+  /* background: #cbb6b6; */
+  background: #dcdcdc;
   width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: ajrSans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 header, footer {
   background: #a4000b;
   color: white;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  isolation: isolate;
   font-weight: bolder;
-  font-size: 1.5rem;
+}
+
+header::before, footer::before {
+  position: absolute;
+  content: '';
+  width: 100vw;
+  height: 100%;
+  background: #a4000b;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
 }
 
 .container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 1rem;
+  background: #dcdcdc;
+  font-weight: 100;
+  gap: 1rem;
 }
 
 button {
@@ -55,4 +82,49 @@ button:hover {
 
 button:active {
   background: #aaa;
+}
+
+h1 {
+  font-family: ajrBang;
+}
+
+.ajr, h2 {
+  font-family: ajrNeo;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.popular-songs {
+  grid-row: 1/-1;
+  grid-column: 2;
+}
+
+.song-card {
+  border: 1px solid #a4000b;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.songCover {
+  width: 15rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  aspect-ratio: 1;
+}
+
+.song-info button {
+  margin-top: auto;
 }

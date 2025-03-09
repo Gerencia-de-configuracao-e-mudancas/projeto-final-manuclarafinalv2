@@ -22,9 +22,12 @@
             <h2>Músicas Populares do <span class="ajr">AJR</span></h2>
             <div class="song-list">
                 <div class="song-card">
-                    <img src="capa-album.jpg" alt="Capa do álbum">
-                    <h3>World's Smallest Violin</h3>
-                    <button onclick="playSound('>link musica.mp3<')">▶ Ouvir trecho</button>
+                    <img class="songCover" src="./Worlds_Smallest_Violin.jpeg" alt="Capa do álbum">
+                    <div class="song-info">
+                      <h3>World's Smallest Violin</h3>
+                      <p>A música 'World's Smallest Violin' da banda AJR explora a relativização do sofrimento pessoal frente às grandes adversidades enfrentadas por outras pessoas.</p>
+                      <button onclick="playSound('>link musica.mp3<')">▶ Ouvir trecho</button>
+                    </div>
                 </div>
                 <!-- Adicionar mais trechos aqui (BANG!, Burn the huse down, etc) -->
             </div>
@@ -32,7 +35,7 @@
     </div>
             
     <section class="social-media">
-        <h2 onclick="playSound('AJR OOOHH wAAAA YAYA.m4a', 0.5)">Siga <span class="ajr">AJR</span> nas Redes Sociais!</h2>
+        <h2 onclick="playSound('AJR OOOHH wAAAA YAYA.m4a', 0.3)">Siga <span class="ajr">AJR</span> nas Redes Sociais!</h2>
         <div class="social-links">
             <a href="https://instagram.com/ajrbrothers" target="_blank">
                 <img src="icons/instagram.png" alt="Instagram">
@@ -49,7 +52,7 @@
         </div>
     </section>
 
-    <footer onclick="playSound('Jack-GO!.mp3')">
+    <footer onclick="playSound('Jack-GO!.mp3', 0.5)">
         <h1>
         &copy; 2025 <span class="ajr">AJR</span> - Todos os direitos reservados.
         </h1>
