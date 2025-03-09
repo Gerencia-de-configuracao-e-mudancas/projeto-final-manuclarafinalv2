@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: ajrBang;
-  src: url('./MailartRubberstamp-Regular.otf');
+  src: url('./fonts/MailartRubberstamp-Regular.otf');
 }
 
 @font-face {
   font-family: ajrSans;
-  src: url('./NimbusSanL-Regu.ttf');
+  src: url('./fonts/NimbusSanL-Regu.ttf');
 }
 
 @font-face {
   font-family: ajrNeo;
-  src: url('./exljbris-MuseoSlab-500.otf');
+  src: url('./fonts/exljbris-MuseoSlab-500.otf');
 }
 
 html, body {
