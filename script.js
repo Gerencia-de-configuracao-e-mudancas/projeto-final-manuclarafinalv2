@@ -1,4 +1,6 @@
-function playSound(file) {
+function playSound(file, volume) {
+    volume = volume ?? 1;
     let audio = new Audio(file);
-    audio.play();
+    audio.volume = 1;
+    audio.play();
 }
