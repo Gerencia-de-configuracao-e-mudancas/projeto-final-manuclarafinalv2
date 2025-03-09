@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJR - Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header onclick="playSound('bangbangbang.mp3')"><h1><span class="ajr">AJR</span> - Sucessos</h1></header>
+    
+    <div class="container">
+        <section class="bio">
+            <h2>Sobre <span class="ajr">AJR</span></h2>
+            <p><span class="ajr">AJR</span> é uma banda indie pop americana formada pelos irmãos Adam , Jack e Ryan Met (anteriormente Metzger). Eles escrevem, produzem e mixam seu próprio material na sala de estar de seu apartamento em Chelsea, Manhattan.</p>
+            <a href="https://ajrbrothers.com" target="_blank">
+                <button onclick="playSound('herewegoo.mp3')">Site Oficial da Banda</button>
+            </a>
+        </section>
+
+        <section class="popular-songs">
+            <h2>Músicas Populares do <span class="ajr">AJR</span></h2>
+            <div class="song-list">
+                <div class="song-card">
+                    <img src="capa-album.jpg" alt="Capa do álbum">
+                    <h3>World's Smallest Violin</h3>
+                    <button onclick="playSound('>link musica.mp3<')">▶ Ouvir trecho</button>
+                </div>
+                <!-- Adicionar mais trechos aqui (BANG!, Burn the huse down, etc) -->
+            </div>
+        </section>
+    </div>
+            
+    <section class="social-media">
+        <h2 onclick="playSound('AJR OOOHH wAAAA YAYA.m4a', 0.5)">Siga <span class="ajr">AJR</span> nas Redes Sociais!</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/ajrbrothers" target="_blank">
+                <img src="icons/instagram.png" alt="Instagram">
+                Instagram
+            </a>
+            <a href="https://x.com/ajrbrothers" target="_blank">
+                <img src="icons/x.png" alt="X">
+                X
+            </a>
+            <a href="https://youtube.com/ajr" target="_blank">
+                <img src="icons/youtube.png" alt="YouTube">
+                YouTube
+            </a>
+        </div>
+    </section>
+
+    <footer onclick="playSound('Jack-GO!.mp3')">
+        <h1>
+        &copy; 2025 <span class="ajr">AJR</span> - Todos os direitos reservados.
+        </h1>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
